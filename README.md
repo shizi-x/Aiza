@@ -43,7 +43,8 @@ cmake ..
 cmake --build . -j$(nproc)
 ```
 
-<h3>Options (high-level):</h3><br>
+<h3>Options (high-level):</h3>
+
 <b>-d <pattern> :</b> <i>find directories matching glob</i><br>
 <b>-f <pattern> :</b> <i>find files matching glob</i><br>
 <b>-z <text> :</b> <i>substring content search</i><br>
