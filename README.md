@@ -26,35 +26,35 @@ Requirements:
 sudo apt install -y build-essential cmake libpcre2-dev 
 mkdir build && cd build
 cmake ..
-cmake --build . -j
+cmake --build . -j$(nproc)
 ```
 <b>RHEL-based</b>
 ```bash
 sudo dnf install -y build-essential cmake libpcre2-dev 
 mkdir build && cd build
 cmake ..
-cmake --build . -j
+cmake --build . -j$(nproc)
 ```
 <b>Arch-based</b>
 ```bash
 sudo pacman -Syu --no-confirm build-essential cmake libpcre2-dev    
 mkdir build && cd build
 cmake ..
-cmake --build . -j
+cmake --build . -j$(nproc)
 ```
 
 <p>Options (high-level):</p>
--d <pattern> : find directories matching glob<br>
--f <pattern> : find files matching glob<br>
--z <text> : substring content search<br>
--R <regex> : PCRE2 regex content search<br>
--rx <pattern>: heuristics: match both name (glob/ fuzzy) and contents (regex)<br>
--i : case-insensitive (applies to substring and name matches)<br>
---binary : treat content search as raw byte pattern (no text filtering)<br>
---ignore-file <file> : load .aizaignore (gitignore-like) from a path<br>
---json : emit line-delimited JSON objects<br>
---json-array : emit a single JSON array (useful if you want a single JSON file)<br>
---no-color : disable ANSI color output<br>
--t <n> : number of threads<br>
---fuzzy : enable fuzzy (Levenshtein) name matching<br>
+-d <pattern> : <i>find directories matching glob</i><br>
+-f <pattern> : <i>find files matching glob</i><br>
+-z <text> : <i>substring content search</i><br>
+-R <regex> : <i>PCRE2 regex content search</i><br>
+-rx <pattern>: <i>heuristics: match both name (glob/ fuzzy) and contents (regex)</i><br>
+-i : <i>case-insensitive (applies to substring and name matches)</i><br>
+--binary : <i>treat content search as raw byte pattern (no text filtering)</i><br>
+--ignore-file <file> : <i>load .aizaignore (gitignore-like) from a path</i><br>
+--json : <i>emit line-delimited JSON objects</i><br>
+--json-array : <i>emit a single JSON array (useful if you want a single JSON file)</i><br>
+--no-color : <i>disable ANSI color output</i><br>
+-t <n> : <i>number of threads</i><br>
+--fuzzy : <i>enable fuzzy (Levenshtein) name matching</i><br>
 </p>
