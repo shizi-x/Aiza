@@ -17,18 +17,33 @@ Features:
 
 Requirements:
 - C++17 compiler (GCC/Clang)
-- CMake >= 3.14
+- CMake >= 3.5
 - libpcre2-8-dev (PCRE2)
 - Internet access to fetch nlohmann/json (or vendor the header locally)
 
+<b>Debian/Ubuntu-based</b>
 ```bash
-sudo apt install build-essential cmake libpcre2-dev   # Debian/Ubuntu 
+sudo apt install -y build-essential cmake libpcre2-dev 
+mkdir build && cd build
+cmake ..
+cmake --build . -j
+```
+<b>RHEL-based</b>
+```bash
+sudo dnf install -y build-essential cmake libpcre2-dev 
+mkdir build && cd build
+cmake ..
+cmake --build . -j
+```
+<b>Arch-based</b>
+```bash
+sudo pacman -Syu --no-confirm build-essential cmake libpcre2-dev    
 mkdir build && cd build
 cmake ..
 cmake --build . -j
 ```
 
-Options (high-level):
+<p>Options (high-level):
 -d <pattern> : find directories matching glob
 -f <pattern> : find files matching glob
 -z <text> : substring content search
@@ -42,3 +57,4 @@ Options (high-level):
 --no-color : disable ANSI color output
 -t <n> : number of threads
 --fuzzy : enable fuzzy (Levenshtein) name matching
+</p>
