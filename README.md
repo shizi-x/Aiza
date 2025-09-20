@@ -27,7 +27,7 @@ sudo apt install build-essential cmake libpcre2-dev   # Debian/Ubuntu example
 mkdir build && cd build
 cmake ..
 cmake --build . -j
-
+```
 Options (high-level):
 -d <pattern> : find directories matching glob
 -f <pattern> : find files matching glob
