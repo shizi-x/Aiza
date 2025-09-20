@@ -43,18 +43,18 @@ cmake ..
 cmake --build . -j
 ```
 
-<p>Options (high-level):
--d <pattern> : find directories matching glob
--f <pattern> : find files matching glob
--z <text> : substring content search
--R <regex> : PCRE2 regex content search
--rx <pattern>: heuristics: match both name (glob/ fuzzy) and contents (regex)
--i : case-insensitive (applies to substring and name matches)
---binary : treat content search as raw byte pattern (no text filtering)
---ignore-file <file> : load .aizaignore (gitignore-like) from a path
---json : emit line-delimited JSON objects
---json-array : emit a single JSON array (useful if you want a single JSON file)
---no-color : disable ANSI color output
--t <n> : number of threads
---fuzzy : enable fuzzy (Levenshtein) name matching
+<p>Options (high-level):</p>
+<i>-d <pattern> : find directories matching glob<br>
+-f <pattern> : find files matching glob<br>
+-z <text> : substring content search<br>
+-R <regex> : PCRE2 regex content search<br>
+-rx <pattern>: heuristics: match both name (glob/ fuzzy) and contents (regex)<br>
+-i : case-insensitive (applies to substring and name matches)<br>
+--binary : treat content search as raw byte pattern (no text filtering)<br>
+--ignore-file <file> : load .aizaignore (gitignore-like) from a path<br>
+--json : emit line-delimited JSON objects<br>
+--json-array : emit a single JSON array (useful if you want a single JSON file)<br>
+--no-color : disable ANSI color output<br>
+-t <n> : number of threads<br>
+--fuzzy : enable fuzzy (Levenshtein) name matching<br></i>
 </p>
