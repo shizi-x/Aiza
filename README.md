@@ -21,13 +21,13 @@ Requirements:
 - libpcre2-8-dev (PCRE2)
 - Internet access to fetch nlohmann/json (or vendor the header locally)
 
-Example:
 ```bash
 sudo apt install build-essential cmake libpcre2-dev   # Debian/Ubuntu example
 mkdir build && cd build
 cmake ..
 cmake --build . -j
 ```
+
 Options (high-level):
 -d <pattern> : find directories matching glob
 -f <pattern> : find files matching glob
