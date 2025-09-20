@@ -22,7 +22,7 @@ Requirements:
 - Internet access to fetch nlohmann/json (or vendor the header locally)
 
 ```bash
-sudo apt install build-essential cmake libpcre2-dev   # Debian/Ubuntu example
+sudo apt install build-essential cmake libpcre2-dev   # Debian/Ubuntu 
 mkdir build && cd build
 cmake ..
 cmake --build . -j
