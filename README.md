@@ -43,18 +43,18 @@ cmake ..
 cmake --build . -j$(nproc)
 ```
 
-<p>Options (high-level):</p>
--d <pattern> : <i>find directories matching glob</i><br>
--f <pattern> : <i>find files matching glob</i><br>
--z <text> : <i>substring content search</i><br>
--R <regex> : <i>PCRE2 regex content search</i><br>
--rx <pattern>: <i>heuristics: match both name (glob/ fuzzy) and contents (regex)</i><br>
--i : <i>case-insensitive (applies to substring and name matches)</i><br>
---binary : <i>treat content search as raw byte pattern (no text filtering)</i><br>
---ignore-file <file> : <i>load .aizaignore (gitignore-like) from a path</i><br>
---json : <i>emit line-delimited JSON objects</i><br>
---json-array : <i>emit a single JSON array (useful if you want a single JSON file)</i><br>
---no-color : <i>disable ANSI color output</i><br>
--t <n> : <i>number of threads</i><br>
---fuzzy : <i>enable fuzzy (Levenshtein) name matching</i><br>
+<u>Options (high-level):</u>
+<b>-d <pattern> :</b> <i>find directories matching glob</i><br>
+<b>-f <pattern> :</b> <i>find files matching glob</i><br>
+<b>-z <text> :</b> <i>substring content search</i><br>
+<b>-R <regex> :</b> <i>PCRE2 regex content search</i><br>
+<b>-rx <pattern>:</b> <i>heuristics: match both name (glob/ fuzzy) and contents (regex)</i><br>
+<b>-i :</b> <i>case-insensitive (applies to substring and name matches)</i><br>
+<b>--binary :</b> <i>treat content search as raw byte pattern (no text filtering)</i><br>
+<b>--ignore-file</b> <file> : <i>load .aizaignore (gitignore-like) from a path</i><br>
+<b>--json :</b> <i>emit line-delimited JSON objects</i><br>
+<b>--json-array :</b> <i>emit a single JSON array (useful if you want a single JSON file)</i><br>
+<b>--no-color :</b> <i>disable ANSI color output</i><br>
+<b>-t <n> :</b> <i>number of threads</i><br>
+<b>--fuzzy :</b> <i>enable fuzzy (Levenshtein) name matching</i><br>
 </p>
