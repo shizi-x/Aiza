@@ -44,7 +44,7 @@ cmake --build . -j
 ```
 
 <p>Options (high-level):</p>
-<i>-d <pattern> : find directories matching glob<br>
+-d <pattern> : find directories matching glob<br>
 -f <pattern> : find files matching glob<br>
 -z <text> : substring content search<br>
 -R <regex> : PCRE2 regex content search<br>
@@ -56,5 +56,5 @@ cmake --build . -j
 --json-array : emit a single JSON array (useful if you want a single JSON file)<br>
 --no-color : disable ANSI color output<br>
 -t <n> : number of threads<br>
---fuzzy : enable fuzzy (Levenshtein) name matching<br></i>
+--fuzzy : enable fuzzy (Levenshtein) name matching<br>
 </p>
