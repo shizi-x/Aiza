@@ -1,5 +1,5 @@
 <h1>AIZA</h1> 
-<h2><red><i>Still in development</i></red></h2>
+<h2><i>Still in development</i></h2>
 Unified fast search tool for Linux written in C++17.
 
 Features:
